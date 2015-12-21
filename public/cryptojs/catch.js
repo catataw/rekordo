@@ -1,4 +1,10 @@
-
+/** 
+ * rekordo.io
+ * (c) 2015 luisan00
+ * This application is under a (MIT) license.
+ * See LICENSE file for more information.
+ *
+ **/
 var hashesList = [];
 var bar = $('.bar');
 
