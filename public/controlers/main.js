@@ -1,7 +1,12 @@
-/**
- * Angular Route controller
- *  
- * */
+/** 
+ * rekordo.io
+ * (c) 2015 luisan00
+ * This application is under a (MIT) license.
+ * See LICENSE file for more information.
+ *
+ * - angularJs controler -
+ * 
+ **/
 // Module INI.
 var angularRoutingApp = angular.module('angularRoutingApp', ['ngRoute']);
 
