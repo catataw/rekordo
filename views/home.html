@@ -1,0 +1,33 @@
+<div class="content">
+<!-- Cryptology libraries -->
+	<script	src="public/cryptojs/crypto.js"></script>
+	<script	src="public/cryptojs/sha256.js"></script>
+	<script	src="public/cryptojs/catch.js"></script>
+	
+	<div class="container" style="padding-top: 20px;">
+		<div style="padding-top: 50px; padding-bottom: 50px;">
+			<!--form upload start-->
+			<form id="upload_form" method="POST" style="display: none;"
+				enctype="multipart/form-data" action="/api/query/">
+				<fieldset>
+					<input id="files" type="file" name="f" multiple="multiple"></input>
+					<button id="upload_submit" type="submit" style="display: none;"
+						class="btn btn-success"></button>
+				</fieldset>
+			</form>
+			<div id="filedropzone" style="" class="magicBox">
+				<div id="magicTXT" class="magic-text">{{ message }}</div>
+			</div>
+			<div id="bar" class="bar progress-bar progress-bar-info" role="progressbar" style="margin-top:1px; height: 5px" ></div>
+			<!-- form upload end -->
+			<div id="output"></div>
+			<div>
+				<table class="table table-striped">
+					<tr id="list"></tr>
+					<!-- show hashes to upload -->
+				</table>
+			</div>
+		</div>
+	
+	</div>
+</div>

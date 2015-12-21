@@ -1,0 +1,91 @@
+<!-- index.html -->
+<html ng-app='angularRoutingApp'>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<!-- custom CSS -->
+<link href="public/css/custom.css" rel="stylesheet">
+<!-- fonts -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- jQuery & Bootstrap JS -->
+<script	src="public/js/jquery.min.js"></script>
+<script	src="public/js/bootstrap.min.js"></script>
+<!-- Crypto. Libraries -->
+<script	src="public/cryptojs/sha256.js"></script>
+<script	src="public/cryptojs/catch.js"></script>
+</head>
+<body ng-controller='mainController'>
+	<header>
+		<!--  -->
+		<nav class="navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img alt="Recordo"
+						src="public/assets/img/brand_logo.png" height="50px"></a>
+					<p class="navbar-text">Ingenium superat vires</p>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;Home</a></li>
+						<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-paperclip fa-lg"></i>&nbsp;&nbsp;About</a>
+							<ul class="dropdown-menu">
+				           		<li><a href="#faq"id="signin_button"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;FAQ</a></li>
+				            	<li><a href="#help"id="signup_button"><i class="fa fa-life-ring"></i>&nbsp;&nbsp;Help</a></li>
+				   			</ul>
+						
+						<li><a href="#contact"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--  -->
+	</header>
+	<div class="subheader"></div>
+	<div id="main-content"> <!--  content start -->
+		<div ng-view></div>
+	</div><!--  content end -->
+	<!-- footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="widget">
+					 	<h5>Contact</h5>
+					  	<i class="fa fa-envelope-o"></i> &nbsp; <a href="mailto:info@rekordo.io">info@rekordo.io</a>
+					  	<hr />
+						<div class="social">
+							<a href="#"><i class="fa fa-facebook facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus google-plus"></i></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+				
+				</div>
+			<hr>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<p>rekordo is under a <strong>MIT</strong> license, documentation under	CreativeCommons</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- AngularJS libraries-->
+	<script	src="public/js/angularjs/angular.min.js"></script>
+	<script	src="public/js/angularjs/angular-route.min.js"></script>
+	<script src="public/controlers/main.js"></script>
+</body>
+</html>

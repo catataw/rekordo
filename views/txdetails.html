@@ -1,0 +1,35 @@
+<!-- Page content starts -->
+<div class="container container-fluid" style="padding-top: 40px;">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		<strong>Transaction: {{ tx.txid }}</strong></div>
+		<div class="panel-body">
+			<div style="background: #F5F5F5; padding: 5;">Summary</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<p><small>Confirmations: {{ tx.confirmations }}</small>
+					<p><small>Block: {{tx.blockhash }}</small>
+					<p><small>Date & Time: {{ tx.time * 1000 | date:'yyyy/MM/dd HH:mm:ss'}}</small>
+					<p><small>Value in: {{ tx.valueIn}}</small>
+					<p><small>Value out: {{ tx.valueOut}}</small>
+					<p><small>Size: {{ tx.size }} Bytes</small>
+					<p><small>Fees: {{ tx.fees }} BTC</small>					
+				</div>
+				<div class="col-md-6 col-sm-6" ng-repeat="out in tx.vout">
+				<p></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<hr>
+					<p><strong>This transaction contain the next string of data:</strong></p>
+					<p>asm: {{ opReturn.asm }}
+					<p>Hex.Encoded: {{ opReturn.hex }}
+					<p>
+				</div>
+			</div>
+		</div>
+		<div class="panel-footer">You can see this transaction in other external services such as: blocktrail.com, blockr.io or blockchain.info</div>
+	</div>
+</div>
+<!-- Page content end -->

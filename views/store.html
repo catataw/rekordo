@@ -1,0 +1,30 @@
+<!-- Page content starts -->
+<div class="container container-fluid" style="padding-top: 40px;">
+	<!-- QRCode Generator -->
+	<script src="../public/js/qrcode.js"></script>
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">Document: <strong><a>{{ data.document }}</a></strong></div>
+			<div class="panel-body">
+				<div id="QRBlock" class="col-md-4 col-sm-6">
+					<div id="qrcode" align="center"></div>
+				</div>
+				<div id ="txtBlock" class="col-md-8 col-sm-6">
+					<div class="panel panel-default">
+						<div id="block" class="panel-body"></div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer" align="right"><small>Registered in our system with date: {{ data.date | date:'yyyy/MM/dd HH:mm:ss' }} and code order: <strong>{{ data.order }}</strong></small></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<p>
+			This register is unalterable and confirms physically it existence.
+			To learn more about this and their security, please check our <a href="#/faq">FAQs</a>.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- Page content end -->
