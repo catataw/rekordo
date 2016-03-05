@@ -1,5 +1,5 @@
 # rekordo
-**rekordo**  is composed of the web-frontend and the backend service or API, this repository is for the frontend service only, for the backend visit <a href="https://github.com/luisan00/rekordo-API">**rekordo-API**</a>
+<a href="https://www.rekordo.io">**rekordo.io**</a>  is composed of the web-frontend and the backend service or API, this repository is for the frontend service only, for the backend visit <a href="https://github.com/luisan00/rekordo-API">**rekordo-API**</a>
  
 
 _This software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software._
